@@ -1,8 +1,8 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.util.concurrent.*;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static com.javase.net.jcip.examples.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun2

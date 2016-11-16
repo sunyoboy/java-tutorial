@@ -1,7 +1,7 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
-import net.jcip.annotations.GuardedBy;
-import net.jcip.annotations.ThreadSafe;
+import com.javase.net.jcip.annotations.GuardedBy;
+import com.javase.net.jcip.annotations.ThreadSafe;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.designpattern.singleton;
+package com.javase.designpattern.singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +13,7 @@ public class Singleton {
 				String url="jdbc:mysql://localhost:3306/flower";
 				String username="flower";
 				String password="flower";
-				String driverName="com.mysql.jdbc.Driver";
+				String driverName="com.javase.mysql.jdbc.Driver";
 				Class.forName(driverName);
 				connection = DriverManager.getConnection(url, username, password);
 			} catch (ClassNotFoundException e) {

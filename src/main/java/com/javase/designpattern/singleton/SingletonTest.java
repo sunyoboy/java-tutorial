@@ -1,4 +1,4 @@
-package com.designpattern.singleton;
+package com.javase.designpattern.singleton;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

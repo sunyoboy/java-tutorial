@@ -1,6 +1,6 @@
-package net.jcip.ch01;
+package com.javase.net.jcip.ch01;
 
-import net.jcip.annotations.NotThreadSafe;
+import com.javase.net.jcip.annotations.NotThreadSafe;
 
 @NotThreadSafe
 public class UnsafeSequence {

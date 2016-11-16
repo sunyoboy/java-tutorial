@@ -1,9 +1,9 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.util.*;
 import java.util.regex.*;
 
-import net.jcip.annotations.*;
+import com.javase.net.jcip.annotations.*;
 
 /**
  * AttributeStore

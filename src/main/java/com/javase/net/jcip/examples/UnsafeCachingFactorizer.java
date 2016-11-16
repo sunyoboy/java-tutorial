@@ -1,10 +1,10 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.math.BigInteger;
 import java.util.concurrent.atomic.*;
 import javax.servlet.*;
 
-import net.jcip.annotations.*;
+import com.javase.net.jcip.annotations.*;
 
 /**
  * UnsafeCachingFactorizer

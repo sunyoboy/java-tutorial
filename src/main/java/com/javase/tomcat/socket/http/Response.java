@@ -1,11 +1,11 @@
-package tomcat.socket.http;
+package com.javase.tomcat.socket.http;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.common.Constant;
+import com.javase.common.Constant;
 
 /**
  * HTTP Response = Status-Line

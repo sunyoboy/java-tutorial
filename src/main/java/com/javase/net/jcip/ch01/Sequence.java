@@ -1,7 +1,7 @@
-package net.jcip.ch01;
+package com.javase.net.jcip.ch01;
 
-import net.jcip.annotations.GuardedBy;
-import net.jcip.annotations.ThreadSafe;
+import com.javase.net.jcip.annotations.GuardedBy;
+import com.javase.net.jcip.annotations.ThreadSafe;
 
 @ThreadSafe
 public class Sequence {

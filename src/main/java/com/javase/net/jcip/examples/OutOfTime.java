@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.util.*;
 import static java.util.concurrent.TimeUnit.SECONDS;

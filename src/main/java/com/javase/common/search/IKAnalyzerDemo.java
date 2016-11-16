@@ -1,4 +1,4 @@
-package com.common.search;
+package com.javase.common.search;
 
 /**
  * IK 中文分词 版本 5.0

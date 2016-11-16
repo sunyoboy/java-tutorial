@@ -1,11 +1,11 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.util.*;
 import java.util.concurrent.*;
 import java.awt.*;
 import java.awt.Point;
 
-import net.jcip.annotations.*;
+import com.javase.net.jcip.annotations.*;
 
 /**
  * DelegatingVehicleTracker

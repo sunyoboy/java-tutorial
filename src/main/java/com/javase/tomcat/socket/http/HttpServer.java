@@ -1,4 +1,4 @@
-package tomcat.socket.http;
+package com.javase.tomcat.socket.http;
 
 import java.io.File;
 import java.io.IOException;
@@ -51,7 +51,7 @@ public class HttpServer {
 				request.parse();
 				
 				// create Response object
-				Response response = new Response(output); 
+				Response response = new Response(output);
 				response.setRequest(request);
 				response.sendSaticResource();
 				

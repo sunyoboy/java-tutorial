@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.*;

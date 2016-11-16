@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.math.BigInteger;
 import java.util.concurrent.*;

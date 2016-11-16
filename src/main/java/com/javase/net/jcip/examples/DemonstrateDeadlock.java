@@ -1,9 +1,9 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
 import java.util.*;
 
-import net.jcip.examples.DynamicOrderDeadlock.Account;
-import net.jcip.examples.DynamicOrderDeadlock.DollarAmount;
+import com.javase.net.jcip.examples.DynamicOrderDeadlock.Account;
+import com.javase.net.jcip.examples.DynamicOrderDeadlock.DollarAmount;
 
 /**
  * DemonstrateDeadlock

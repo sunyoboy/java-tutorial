@@ -8,7 +8,7 @@
  * <author> sunlj     <time>      <version>    <desc>
  * 修改人姓名             修改日期            版本号                  描述
  */
-package com.junit;
+package com.javase.junit;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;

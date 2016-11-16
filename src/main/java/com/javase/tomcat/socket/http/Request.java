@@ -1,4 +1,4 @@
-package tomcat.socket.http;
+package com.javase.tomcat.socket.http;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,7 +6,7 @@ import java.io.InputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.common.Constant;
+import com.javase.common.Constant;
 
 public class Request {
 

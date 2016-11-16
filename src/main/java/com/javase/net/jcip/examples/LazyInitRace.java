@@ -1,6 +1,6 @@
-package net.jcip.examples;
+package com.javase.net.jcip.examples;
 
-import net.jcip.annotations.*;
+import com.javase.net.jcip.annotations.*;
 
 /**
  * LazyInitRace

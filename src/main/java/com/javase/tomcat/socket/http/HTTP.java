@@ -1,4 +1,4 @@
-package tomcat.socket.http;
+package com.javase.tomcat.socket.http;
 
 import java.io.BufferedReader;
 import java.io.IOException;

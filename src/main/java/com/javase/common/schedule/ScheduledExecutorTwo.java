@@ -8,7 +8,7 @@
  * <author> sunlj     <time>      <version>    <desc>
  * 修改人姓名             修改日期            版本号                  描述
  */
-package com.common.schedule;
+package com.javase.common.schedule;
 
 import java.util.Calendar;
 import java.util.TimerTask;

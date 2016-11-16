@@ -1,4 +1,4 @@
-package com.common;
+package com.javase.common;
 
 public class Constant {
 

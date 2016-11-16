@@ -1,4 +1,4 @@
-package com.junit;
+package com.javase.junit;
 
 import java.util.Enumeration;
 

@@ -44,7 +44,6 @@ public class HeadHunter implements Subject {
 
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-
         for(String s : list) {
             stringBuilder.append(s);
             stringBuilder.append(",");

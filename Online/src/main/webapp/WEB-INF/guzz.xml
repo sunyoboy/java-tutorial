@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE guzz-configs PUBLIC "-//GUZZ//DTD MAIN CONFIG//EN" "http://www.guzz.org/dtd/guzz.dtd">
+
+<guzz-configs>
+
+	<config-server>
+		<server class="org.guzz.config.LocalFileConfigServer">
+			<param name="resource" value="classpath:thulive.properties" />
+		</server>
+	</config-server>
+
+	<dialect class="org.guzz.dialect.Mysql5Dialect" />
+	
+	<tran>
+		<dbgroup name="default" masterDBConfigName="masterDB" />
+	</tran>
+
+	<!-- business starts -->
+	<business name="ParamType" dbgroup="default" interpret="" file="classpath:com/sjdd/base/entity/mysql/ParamType.hbm.xml" />
+	<business name="SysFunc" dbgroup="default" file="classpath:com/sjdd/base/entity/mysql/SysFunc.hbm.xml" />
+	<business name="SysParam" dbgroup="default" file="classpath:com/sjdd/base/entity/mysql/SysParam.hbm.xml" />
+	<business name="SysRole" dbgroup="default" file="classpath:com/sjdd/base/entity/mysql/SysRole.hbm.xml" />
+	<business name="UserGroup" dbgroup="default" file="classpath:com/sjdd/base/entity/mysql/UserGroup.hbm.xml" />
+	<business name="UserInfo" dbgroup="default" file="classpath:com/sjdd/base/entity/mysql/UserInfo.hbm.xml" />
+
+	<!-- business ends -->
+
+</guzz-configs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- guzz config -->
+<!--
+    <bean id="guzzContext" class="org.guzz.web.context.spring.GuzzContextBeanFactory" factory-method="createGuzzContext">
+        <constructor-arg>
+            <value>/WEB-INF/guzz.xml</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="abstractGuzzDao" class="org.guzz.dao.GuzzBaseDao" abstract="true">
+        <property name="guzzContext" ref="guzzContext" />
+    </bean>
+-->
+
+    <!--  异常处理  -->
+    <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="include/defaultException"/>
+    </bean>
+
+    <context:component-scan base-package="com.lieve.online"/>
+    <!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+
+    <import resource="spring-cache.xml"/>
+    <import resource="spring-shiro.xml"/>
+
+
+    <!-- enables annotation based configuration -->
+<!--    <context:annotation-config/>-->
+
+    <!-- AOP config -->
+    <!-- Enabling @AspectJ Support with XML configuration -->
+<!--    <aop:aspectj-autoproxy/>
+
+
+    <bean id="singer" class="com.sjdd.chat.aop.xyz.Singer"/>-->
+  <!--  <bean id="aspect" class="com.sjdd.chat.aop.xyz.NotVeryUsefulAspect"/>-->
+
+<!--
+    <aop:config>
+        <aop:pointcut id="sing" expression="execution(* com.sjdd.chat.aop.xyz.Singer.sing(..))"/>
+        <aop:aspect ref="myAspect">
+            <aop:before pointcut-ref="sing" method="doBefore" />
+        </aop:aspect>
+    </aop:config>-->
+    <!-- end AOP config -->
+
+
+    <!-- scans for annotated classes in the com.company package -->
+<!--
+    <context:component-scan base-package="com.sjdd.chat.spring.jms.obj"/>
+
+    <import resource="spring-jms.xml"/>
+-->
+    <!-- enables annotation based configuration -->
+    <!--    <context:annotation-config/>-->
+
+    <!-- AOP config -->
+    <!-- Enabling @AspectJ Support with XML configuration -->
+<!--    <context:component-scan base-package="com.sjdd.thulive.aop"/>-->
+    <aop:aspectj-autoproxy/>
+
+    </beans>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE guzz-mapping PUBLIC "-//GUZZ//GUZZ MAPPING DTD//EN" "http://www.guzz.org/dtd/guzz-mapping.dtd">
+<hibernate-mapping>
+ <class  name="com.lieve.online.base.entity.UserInfo" table="base_userinfo">
+  	<id name="userNo" type="Long"  column="UserNo" >
+    	<generator class="identity"/>
+  	</id>
+  	<property name="loginName" type="string"  column="LoginName"/>
+  	<property name="password" type="string"  column="Password"/>
+  	<property name="sessionKey" type="string"  column="SessionKey"/>
+  	<property name="type" type="int"  column="Type"/>
+  	<property name="roleNo" type="int"  column="RoleNo"/>
+  	<property name="groupNo" type="int"  column="GroupNo"/>
+  	<property name="userStatus" type="int"  column="UserStatus"/>
+  	<property name="realName" type="string"  column="RealName"/>
+  	<property name="sex" type="int"  column="Sex"/>
+  	<property name="mobilePhone" type="string"  column="MobilePhone"/>
+  	<property name="phoneActiveCode" type="string"  column="PhoneActiveCode"/>
+  	<property name="phoneActiveStatus" type="int"  column="PhoneActiveStatus"/>
+  	<property name="email" type="string"  column="Email"/>
+  	<property name="emailActiveCode" type="string"  column="EmailActiveCode"/>
+  	<property name="emailActiveStatus" type="int"  column="EmailActiveStatus"/>
+  	<property name="QQ" type="string"  column="QQ"/>
+  	<property name="weChat" type="string"  column="WeChat"/>
+  	<property name="sysSkin" type="string"  column="SysSkin"/>
+  	<property name="photo" type="string"  column="Photo"/>
+  	<property name="comments" type="string"  column="Comments"/>
+  	<property name="createTime" type="timestamp"  column="CreateTime"/>
+  	<property name="lastModified" type="timestamp"  column="LastModified"/>
+  	<property name="lastLogin" type="timestamp"  column="LastLogin"/>
+  	<property name="lastIP" type="string"  column="LastIP"/>
+  	<property name="lastRegion" type="string"  column="LastRegion"/>
+  	<property name="lastLogout" type="timestamp"  column="LastLogout"/>
+  	<property name="sumOnline" type="int"  column="SumOnline"/>
+ </class>
+</hibernate-mapping>

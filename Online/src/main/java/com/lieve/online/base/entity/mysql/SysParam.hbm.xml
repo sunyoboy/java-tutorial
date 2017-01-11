@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE guzz-mapping PUBLIC "-//GUZZ//GUZZ MAPPING DTD//EN" "http://www.guzz.org/dtd/guzz-mapping.dtd">
+<hibernate-mapping>
+ <class  name="com.lieve.online.base.entity.SysParam" table="base_sysparam">
+  	<id name="paramID" type="int"  column="ParamID" >
+    	<generator class="identity"/>
+  	</id>
+  	<property name="paramName" type="string"  column="ParamName"/>
+  	<property name="typeID" type="int"  column="TypeID"/>
+  	<property name="paramStatus" type="int"  column="ParamStatus"/>
+  	<property name="paramValue" type="string"  column="ParamValue"/>
+  	<property name="comments" type="string"  column="Comments"/>
+ </class>
+</hibernate-mapping>

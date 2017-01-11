@@ -10,4 +10,6 @@ mvn archetype:generate -DgroupId=com.lieve -DartifactId=Online -DarchetypeArtifa
     .   javascript控制台：option＋command＋j 
     .   或者按option＋command＋c也可以打开
 
+    NAVC WXJ5 JGLJ 3CA6
+
     http://www.cnblogs.com/xunziji/archive/2012/08/23/2652530.html

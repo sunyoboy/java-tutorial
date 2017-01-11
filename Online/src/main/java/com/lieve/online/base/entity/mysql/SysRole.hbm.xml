@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE guzz-mapping PUBLIC "-//GUZZ//GUZZ MAPPING DTD//EN" "http://www.guzz.org/dtd/guzz-mapping.dtd">
+<hibernate-mapping>
+ <class  name="com.lieve.online.base.entity.SysRole" table="base_sysrole">
+  	<id name="roleNo" type="int"  column="RoleNo" >
+    	<generator class="identity"/>
+  	</id>
+  	<property name="roleName" type="string"  column="RoleName"/>
+  	<property name="roleRight" type="string"  column="RoleRight"/>
+  	<property name="defaultFlag" type="int"  column="DefaultFlag"/>
+  	<property name="comments" type="string"  column="Comments"/>
+  	<property name="createUser" type="int"  column="CreateUser"/>
+  	<property name="createTime" type="Date"  column="CreateTime"/>
+ </class>
+</hibernate-mapping>

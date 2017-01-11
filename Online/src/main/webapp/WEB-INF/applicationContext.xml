@@ -35,6 +35,7 @@
 
     <import resource="spring-cache.xml"/>
     <import resource="spring-shiro.xml"/>
+    <import resource="spring-druid.xml"/>
 
 
     <!-- enables annotation based configuration -->
@@ -45,12 +46,12 @@
 <!--    <aop:aspectj-autoproxy/>
 
 
-    <bean id="singer" class="com.sjdd.chat.aop.xyz.Singer"/>-->
-  <!--  <bean id="aspect" class="com.sjdd.chat.aop.xyz.NotVeryUsefulAspect"/>-->
+    <bean id="singer" class="com.lieve.online.chat.aop.xyz.Singer"/>-->
+  <!--  <bean id="aspect" class="com.lieve.online.chat.aop.xyz.NotVeryUsefulAspect"/>-->
 
 <!--
     <aop:config>
-        <aop:pointcut id="sing" expression="execution(* com.sjdd.chat.aop.xyz.Singer.sing(..))"/>
+        <aop:pointcut id="sing" expression="execution(* com.lieve.online.chat.aop.xyz.Singer.sing(..))"/>
         <aop:aspect ref="myAspect">
             <aop:before pointcut-ref="sing" method="doBefore" />
         </aop:aspect>
@@ -60,7 +61,7 @@
 
     <!-- scans for annotated classes in the com.company package -->
 <!--
-    <context:component-scan base-package="com.sjdd.chat.spring.jms.obj"/>
+    <context:component-scan base-package="com.lieve.online.chat.spring.jms.obj"/>
 
     <import resource="spring-jms.xml"/>
 -->
@@ -69,7 +70,7 @@
 
     <!-- AOP config -->
     <!-- Enabling @AspectJ Support with XML configuration -->
-<!--    <context:component-scan base-package="com.sjdd.thulive.aop"/>-->
+<!--    <context:component-scan base-package="com.lieve.online.thulive.aop"/>-->
     <aop:aspectj-autoproxy/>
 
     </beans>

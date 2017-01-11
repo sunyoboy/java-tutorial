@@ -1,7 +1,7 @@
 package com.lieve.online.shiro;
 
-import com.sjdd.base.entity.UserInfo;
-import com.sjdd.base.service.UserInfoService;
+import com.lieve.online.base.entity.UserInfo;
+import com.lieve.online.base.service.UserInfoService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;

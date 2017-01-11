@@ -1,6 +1,6 @@
 package com.lieve.online.shiro;
 
-import com.sjdd.base.service.UserInfoService;
+import com.lieve.online.base.service.UserInfoService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.web.filter.PathMatchingFilter;
 import org.springframework.beans.factory.annotation.Autowired;

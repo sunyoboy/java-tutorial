@@ -1,6 +1,6 @@
 package com.lieve.online.shiro.service;
 
-import com.sjdd.base.entity.UserInfo;
+import com.lieve.online.base.entity.UserInfo;
 import com.lieve.online.shiro.entity.User;
 import org.apache.shiro.crypto.RandomNumberGenerator;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE guzz-mapping PUBLIC "-//GUZZ//GUZZ MAPPING DTD//EN" "http://www.guzz.org/dtd/guzz-mapping.dtd">
+<hibernate-mapping>
+ <class  name="com.lieve.online.base.entity.UserGroup" table="base_usergroup">
+  	<id name="groupNo" type="int"  column="GroupNo" >
+    	<generator class="identity"/>
+  	</id>
+  	<property name="groupName" type="string"  column="GroupName"/>
+  	<property name="parentNo" type="int"  column="ParentNo"/>
+  	<property name="comments" type="string"  column="Comments"/>
+ </class>
+</hibernate-mapping>

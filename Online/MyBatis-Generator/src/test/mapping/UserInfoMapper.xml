@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="test.IDao.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="test.domain.UserInfo" >
+    <id column="UserNo" property="userno" jdbcType="INTEGER" />
+    <result column="LoginName" property="loginname" jdbcType="VARCHAR" />
+    <result column="Password" property="password" jdbcType="VARCHAR" />
+    <result column="SessionKey" property="sessionkey" jdbcType="VARCHAR" />
+    <result column="Type" property="type" jdbcType="INTEGER" />
+    <result column="RoleNo" property="roleno" jdbcType="INTEGER" />
+    <result column="GroupNo" property="groupno" jdbcType="INTEGER" />
+    <result column="UserStatus" property="userstatus" jdbcType="INTEGER" />
+    <result column="RealName" property="realname" jdbcType="VARCHAR" />
+    <result column="Sex" property="sex" jdbcType="INTEGER" />
+    <result column="MobilePhone" property="mobilephone" jdbcType="VARCHAR" />
+    <result column="PhoneActiveCode" property="phoneactivecode" jdbcType="VARCHAR" />
+    <result column="PhoneActiveStatus" property="phoneactivestatus" jdbcType="INTEGER" />
+    <result column="Email" property="email" jdbcType="VARCHAR" />
+    <result column="EmailActiveCode" property="emailactivecode" jdbcType="VARCHAR" />
+    <result column="EmailActiveStatus" property="emailactivestatus" jdbcType="INTEGER" />
+    <result column="QQ" property="qq" jdbcType="VARCHAR" />
+    <result column="WeChat" property="wechat" jdbcType="VARCHAR" />
+    <result column="SysSkin" property="sysskin" jdbcType="VARCHAR" />
+    <result column="Photo" property="photo" jdbcType="VARCHAR" />
+    <result column="Comments" property="comments" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="LastModified" property="lastmodified" jdbcType="TIMESTAMP" />
+    <result column="LastLogin" property="lastlogin" jdbcType="TIMESTAMP" />
+    <result column="LastIP" property="lastip" jdbcType="VARCHAR" />
+    <result column="LastRegion" property="lastregion" jdbcType="VARCHAR" />
+    <result column="LastLogout" property="lastlogout" jdbcType="TIMESTAMP" />
+    <result column="SumOnline" property="sumonline" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    UserNo, LoginName, Password, SessionKey, Type, RoleNo, GroupNo, UserStatus, RealName, 
+    Sex, MobilePhone, PhoneActiveCode, PhoneActiveStatus, Email, EmailActiveCode, EmailActiveStatus, 
+    QQ, WeChat, SysSkin, Photo, Comments, CreateTime, LastModified, LastLogin, LastIP, 
+    LastRegion, LastLogout, SumOnline
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from base_userinfo
+    where UserNo = #{userno,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from base_userinfo
+    where UserNo = #{userno,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="test.domain.UserInfo" >
+    insert into base_userinfo (UserNo, LoginName, Password, 
+      SessionKey, Type, RoleNo, 
+      GroupNo, UserStatus, RealName, 
+      Sex, MobilePhone, PhoneActiveCode, 
+      PhoneActiveStatus, Email, EmailActiveCode, 
+      EmailActiveStatus, QQ, WeChat, 
+      SysSkin, Photo, Comments, 
+      CreateTime, LastModified, LastLogin, 
+      LastIP, LastRegion, LastLogout, 
+      SumOnline)
+    values (#{userno,jdbcType=INTEGER}, #{loginname,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{sessionkey,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{roleno,jdbcType=INTEGER}, 
+      #{groupno,jdbcType=INTEGER}, #{userstatus,jdbcType=INTEGER}, #{realname,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=INTEGER}, #{mobilephone,jdbcType=VARCHAR}, #{phoneactivecode,jdbcType=VARCHAR}, 
+      #{phoneactivestatus,jdbcType=INTEGER}, #{email,jdbcType=VARCHAR}, #{emailactivecode,jdbcType=VARCHAR}, 
+      #{emailactivestatus,jdbcType=INTEGER}, #{qq,jdbcType=VARCHAR}, #{wechat,jdbcType=VARCHAR}, 
+      #{sysskin,jdbcType=VARCHAR}, #{photo,jdbcType=VARCHAR}, #{comments,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{lastmodified,jdbcType=TIMESTAMP}, #{lastlogin,jdbcType=TIMESTAMP}, 
+      #{lastip,jdbcType=VARCHAR}, #{lastregion,jdbcType=VARCHAR}, #{lastlogout,jdbcType=TIMESTAMP}, 
+      #{sumonline,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="test.domain.UserInfo" >
+    insert into base_userinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userno != null" >
+        UserNo,
+      </if>
+      <if test="loginname != null" >
+        LoginName,
+      </if>
+      <if test="password != null" >
+        Password,
+      </if>
+      <if test="sessionkey != null" >
+        SessionKey,
+      </if>
+      <if test="type != null" >
+        Type,
+      </if>
+      <if test="roleno != null" >
+        RoleNo,
+      </if>
+      <if test="groupno != null" >
+        GroupNo,
+      </if>
+      <if test="userstatus != null" >
+        UserStatus,
+      </if>
+      <if test="realname != null" >
+        RealName,
+      </if>
+      <if test="sex != null" >
+        Sex,
+      </if>
+      <if test="mobilephone != null" >
+        MobilePhone,
+      </if>
+      <if test="phoneactivecode != null" >
+        PhoneActiveCode,
+      </if>
+      <if test="phoneactivestatus != null" >
+        PhoneActiveStatus,
+      </if>
+      <if test="email != null" >
+        Email,
+      </if>
+      <if test="emailactivecode != null" >
+        EmailActiveCode,
+      </if>
+      <if test="emailactivestatus != null" >
+        EmailActiveStatus,
+      </if>
+      <if test="qq != null" >
+        QQ,
+      </if>
+      <if test="wechat != null" >
+        WeChat,
+      </if>
+      <if test="sysskin != null" >
+        SysSkin,
+      </if>
+      <if test="photo != null" >
+        Photo,
+      </if>
+      <if test="comments != null" >
+        Comments,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="lastmodified != null" >
+        LastModified,
+      </if>
+      <if test="lastlogin != null" >
+        LastLogin,
+      </if>
+      <if test="lastip != null" >
+        LastIP,
+      </if>
+      <if test="lastregion != null" >
+        LastRegion,
+      </if>
+      <if test="lastlogout != null" >
+        LastLogout,
+      </if>
+      <if test="sumonline != null" >
+        SumOnline,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userno != null" >
+        #{userno,jdbcType=INTEGER},
+      </if>
+      <if test="loginname != null" >
+        #{loginname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sessionkey != null" >
+        #{sessionkey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="roleno != null" >
+        #{roleno,jdbcType=INTEGER},
+      </if>
+      <if test="groupno != null" >
+        #{groupno,jdbcType=INTEGER},
+      </if>
+      <if test="userstatus != null" >
+        #{userstatus,jdbcType=INTEGER},
+      </if>
+      <if test="realname != null" >
+        #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="mobilephone != null" >
+        #{mobilephone,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneactivecode != null" >
+        #{phoneactivecode,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneactivestatus != null" >
+        #{phoneactivestatus,jdbcType=INTEGER},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="emailactivecode != null" >
+        #{emailactivecode,jdbcType=VARCHAR},
+      </if>
+      <if test="emailactivestatus != null" >
+        #{emailactivestatus,jdbcType=INTEGER},
+      </if>
+      <if test="qq != null" >
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="wechat != null" >
+        #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="sysskin != null" >
+        #{sysskin,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="comments != null" >
+        #{comments,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastmodified != null" >
+        #{lastmodified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastlogin != null" >
+        #{lastlogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastip != null" >
+        #{lastip,jdbcType=VARCHAR},
+      </if>
+      <if test="lastregion != null" >
+        #{lastregion,jdbcType=VARCHAR},
+      </if>
+      <if test="lastlogout != null" >
+        #{lastlogout,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sumonline != null" >
+        #{sumonline,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="test.domain.UserInfo" >
+    update base_userinfo
+    <set >
+      <if test="loginname != null" >
+        LoginName = #{loginname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        Password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sessionkey != null" >
+        SessionKey = #{sessionkey,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        Type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="roleno != null" >
+        RoleNo = #{roleno,jdbcType=INTEGER},
+      </if>
+      <if test="groupno != null" >
+        GroupNo = #{groupno,jdbcType=INTEGER},
+      </if>
+      <if test="userstatus != null" >
+        UserStatus = #{userstatus,jdbcType=INTEGER},
+      </if>
+      <if test="realname != null" >
+        RealName = #{realname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        Sex = #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="mobilephone != null" >
+        MobilePhone = #{mobilephone,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneactivecode != null" >
+        PhoneActiveCode = #{phoneactivecode,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneactivestatus != null" >
+        PhoneActiveStatus = #{phoneactivestatus,jdbcType=INTEGER},
+      </if>
+      <if test="email != null" >
+        Email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="emailactivecode != null" >
+        EmailActiveCode = #{emailactivecode,jdbcType=VARCHAR},
+      </if>
+      <if test="emailactivestatus != null" >
+        EmailActiveStatus = #{emailactivestatus,jdbcType=INTEGER},
+      </if>
+      <if test="qq != null" >
+        QQ = #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="wechat != null" >
+        WeChat = #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="sysskin != null" >
+        SysSkin = #{sysskin,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        Photo = #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="comments != null" >
+        Comments = #{comments,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastmodified != null" >
+        LastModified = #{lastmodified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastlogin != null" >
+        LastLogin = #{lastlogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastip != null" >
+        LastIP = #{lastip,jdbcType=VARCHAR},
+      </if>
+      <if test="lastregion != null" >
+        LastRegion = #{lastregion,jdbcType=VARCHAR},
+      </if>
+      <if test="lastlogout != null" >
+        LastLogout = #{lastlogout,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sumonline != null" >
+        SumOnline = #{sumonline,jdbcType=INTEGER},
+      </if>
+    </set>
+    where UserNo = #{userno,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="test.domain.UserInfo" >
+    update base_userinfo
+    set LoginName = #{loginname,jdbcType=VARCHAR},
+      Password = #{password,jdbcType=VARCHAR},
+      SessionKey = #{sessionkey,jdbcType=VARCHAR},
+      Type = #{type,jdbcType=INTEGER},
+      RoleNo = #{roleno,jdbcType=INTEGER},
+      GroupNo = #{groupno,jdbcType=INTEGER},
+      UserStatus = #{userstatus,jdbcType=INTEGER},
+      RealName = #{realname,jdbcType=VARCHAR},
+      Sex = #{sex,jdbcType=INTEGER},
+      MobilePhone = #{mobilephone,jdbcType=VARCHAR},
+      PhoneActiveCode = #{phoneactivecode,jdbcType=VARCHAR},
+      PhoneActiveStatus = #{phoneactivestatus,jdbcType=INTEGER},
+      Email = #{email,jdbcType=VARCHAR},
+      EmailActiveCode = #{emailactivecode,jdbcType=VARCHAR},
+      EmailActiveStatus = #{emailactivestatus,jdbcType=INTEGER},
+      QQ = #{qq,jdbcType=VARCHAR},
+      WeChat = #{wechat,jdbcType=VARCHAR},
+      SysSkin = #{sysskin,jdbcType=VARCHAR},
+      Photo = #{photo,jdbcType=VARCHAR},
+      Comments = #{comments,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      LastModified = #{lastmodified,jdbcType=TIMESTAMP},
+      LastLogin = #{lastlogin,jdbcType=TIMESTAMP},
+      LastIP = #{lastip,jdbcType=VARCHAR},
+      LastRegion = #{lastregion,jdbcType=VARCHAR},
+      LastLogout = #{lastlogout,jdbcType=TIMESTAMP},
+      SumOnline = #{sumonline,jdbcType=INTEGER}
+    where UserNo = #{userno,jdbcType=INTEGER}
+  </update>
+</mapper>

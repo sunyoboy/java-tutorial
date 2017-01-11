@@ -16,5 +16,10 @@ lieve 欣然
     http://www.imcjd.com/?p=1237
 4、代码检查机制
 
+5. SLF4J https://yq.aliyun.com/articles/47251
+
+Reference
+    http://www.cnblogs.com/acehalo/p/3901809.html
+    http://blog.csdn.net/gebitan505/article/details/44455235/
 
 /var/root/Desktop/THULive

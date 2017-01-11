@@ -1,9 +1,9 @@
 package com.lieve.online.shiro.controller;
 
-import com.sjdd.base.entity.SysFunc;
-import com.sjdd.base.entity.UserInfo;
-import com.sjdd.base.service.SysFuncService;
-import com.sjdd.base.service.UserInfoService;
+import com.lieve.online.base.entity.SysFunc;
+import com.lieve.online.base.entity.UserInfo;
+import com.lieve.online.base.service.SysFuncService;
+import com.lieve.online.base.service.UserInfoService;
 import com.lieve.online.shiro.CurrentUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

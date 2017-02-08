@@ -1,0 +1,16 @@
+package org.lieve.nio.common;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: sunyoboy@gmail.com
+ * Date: 2/7/17
+ * Time: 10:49 PM
+ */
+public class Constant {
+
+    public static final int TIME_OUT = 1000; // 超时时间
+
+    public static final int BUFFER_BYTE_SIZE = 1024; //
+
+    public static final int PORT = 8090;
+}

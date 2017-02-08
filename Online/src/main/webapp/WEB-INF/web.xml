@@ -36,18 +36,6 @@
         </listener-class>
     </listener>
 
-    <!--guzz config-->
-    <context-param>
-        <param-name>guzzConfigLocation</param-name>
-        <param-value>/WEB-INF/guzz.xml</param-value>
-    </context-param>
-
-    <listener>
-        <listener-class>
-            org.guzz.web.context.ContextLoaderListener
-        </listener-class>
-    </listener>
-
     <!-- Reads request input using UTF-8 encoding -->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>

@@ -10,8 +10,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.naming.AuthenticationException;
-
 /**
  * Created by DD240 on 2016/1/21.
  */

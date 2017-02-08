@@ -1,8 +1,8 @@
 package com.lieve.online;
 
-import com.lieve.online.shiro.dao.UserDao;
-import com.lieve.online.shiro.entity.Article;
-import com.lieve.online.shiro.entity.User;
+import com.lieve.online.portal.dao.UserDao;
+import com.lieve.online.portal.entity.Article;
+import com.lieve.online.portal.entity.User;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;

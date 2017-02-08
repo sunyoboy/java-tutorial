@@ -1,4 +1,4 @@
-package com.lieve.online.shiro.entity;
+package com.lieve.online.portal.entity;
 
 /**
  * Created by DD240 on 2016/11/24.

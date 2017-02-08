@@ -1,6 +1,5 @@
 package com.lieve.online.base.common;
 
-import com.lieve.online.common.Util;
 import org.apache.log4j.Logger;
 
 import java.io.*;

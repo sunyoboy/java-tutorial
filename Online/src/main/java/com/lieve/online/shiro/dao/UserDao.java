@@ -1,24 +1,29 @@
 package com.lieve.online.shiro.dao;
 
-import com.lieve.online.shiro.entity.Article;
+
 import com.lieve.online.shiro.entity.User;
 
-import java.util.List;
+import java.util.Set;
 
 /**
- * Created by DD240 on 2016/11/24.
+ * <p>User: Zhang Kaitao
+ * <p>Date: 14-1-28
+ * <p>Version: 1.0
  */
 public interface UserDao {
 
-    public void insertUser(User user);
-
-    public void deleteUser(int id);
-
+    public User createUser(User user);
     public void updateUser(User user);
+    public void deleteUser(Long userId);
 
-    public User selectUser(int id);
+    public void correlationRoles(Long userId, Long... roleIds);
+    public void uncorrelationRoles(Long userId, Long... roleIds);
 
-    public List<User> selectUsers(String username);
+    User findOne(Long userId);
 
-    public List<Article> getUserArticles(int id);
+    User findByUsername(String username);
+
+    Set<String> findRoles(String username);
+
+    Set<String> findPermissions(String username);
 }

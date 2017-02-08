@@ -3,7 +3,7 @@ package com.lieve.online.base.service.gzimpl;
 import com.lieve.online.base.common.BaseServiceImpl;
 import com.lieve.online.base.common.Constant;
 import com.lieve.online.base.common.QueryResult;
-import com.lieve.online.common.Util;
+import com.lieve.online.base.common.Util;
 import com.lieve.online.base.dao.SysRoleDao;
 import com.lieve.online.base.entity.SysRole;
 import com.lieve.online.base.service.SysFuncService;

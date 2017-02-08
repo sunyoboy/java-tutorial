@@ -30,6 +30,7 @@
     <!-- enables annotation based configuration -->
     <context:annotation-config/>
 
+    <mvc:view-controller path="/" view-name="index"/>
 
 
     <!-- Configures the @Controller programming model -->

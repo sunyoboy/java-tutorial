@@ -1,7 +1,6 @@
 package com.lieve.online.base.common;
 
 import com.lieve.online.base.entity.SysRole;
-import com.lieve.online.common.Util;
 import org.guzz.orm.Business;
 import org.guzz.orm.ObjectMapping;
 import org.guzz.orm.se.Terms;

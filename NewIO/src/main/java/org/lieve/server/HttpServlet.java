@@ -53,7 +53,7 @@ public class HttpServlet extends GenericServlet {
         // get request type
         String method = req.getMethod();
 
-        // 将不同的请求类型路由到不同的处理方法
+/*        // 将不同的请求类型路由到不同的处理方法
         if (method.equals(Constant.METHOD_GET)) {
             long lastModified = getLastModified(req);
             if (lastModified == -1) {
@@ -88,7 +88,7 @@ public class HttpServlet extends GenericServlet {
             errArgs[0] = method;
             errMsg = MessageFormat.format(errMsg, errArgs);
             resp.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, errMsg);
-        }
+        }*/
     }
 
     @Override
@@ -97,13 +97,13 @@ public class HttpServlet extends GenericServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
-
+/*
         String protocol = req.getProtocol();
         String message = "http.method_get_not_supported";
         if (protocol.endsWith("1.1")) {
             resp.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, message);
         } else {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST, message);
-        }
+        }*/
     }
 }

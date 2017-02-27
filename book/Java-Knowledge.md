@@ -137,4 +137,6 @@
 #### 项目管理
   1. Maven
   2. Git
-##### Gradle
+  3. Gradle
+http://www.tuicool.com/articles/mYnAru
+http://www.jianshu.com/p/746c01a8535a

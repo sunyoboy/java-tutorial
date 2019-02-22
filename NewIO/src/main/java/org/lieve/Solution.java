@@ -1,5 +1,7 @@
 package org.lieve;
 
+import java.util.logging.Logger;
+
 /**
  * Created by IntelliJ IDEA.
  * User: sunyoboy@gmail.com
@@ -7,6 +9,8 @@ package org.lieve;
  * Time: 9:50 PM
  */
 public class Solution {
+
+    private static Logger logger = Logger.getLogger(Solution.class.getName());
     public int integerReplacement(int n) {
         int step = 0;
         while (n != 1) {
@@ -23,6 +27,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
+        logger.info("hello");
         System.out.println(Integer.bitCount(65535));
         System.out.println(new Solution().integerReplacement(65535));
     }

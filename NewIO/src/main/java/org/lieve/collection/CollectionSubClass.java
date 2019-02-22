@@ -1,6 +1,7 @@
 package org.lieve.collection;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,4 +16,7 @@ public class CollectionSubClass {
     LinkedList linkedList;
     Stack stack;
     Vector vector;
+    ConcurrentHashMap hashMap;
+    ThreadLocal t;
+
 }
